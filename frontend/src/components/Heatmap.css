@@ -1,0 +1,122 @@
+.heatmap-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.heatmap-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.heatmap-header h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.heatmap-header p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.map-wrapper {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1.5rem;
+}
+
+.leaflet-map {
+  border-radius: 15px;
+}
+
+.custom-aqi-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+.aqi-popup {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.aqi-popup h4 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.popup-aqi-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.popup-category {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.map-legend {
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.map-legend h4 {
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.legend-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.legend-color {
+  width: 20px;
+  height: 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.heatmap-loading {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .heatmap-container {
+    padding: 1rem;
+  }
+  
+  .map-wrapper {
+    margin-bottom: 1rem;
+  }
+  
+  .legend-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .legend-item {
+    font-size: 0.8rem;
+  }
+}
